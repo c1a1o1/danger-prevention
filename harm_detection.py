@@ -13,7 +13,7 @@ from object_detection.utils import ops as utils_ops
 
 # Load the configuration variables from 'properties.txt'
 try:
-    with open('properties.txt') as f:
+    with open('app.properties') as f:
         data = f.readlines()
         for line in data:
             var = line.split('=')

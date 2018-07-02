@@ -54,15 +54,12 @@ class DangerSituation:
     """Static variables accesible for the main and the rest of the threads.
     
     Args:
-        
-        i (int): Total number of people detected.
         img (nparray): Encoded image with the results of the prediction.
         data_dict (dict): Info used in 'message'.
             class (str): Temperature of the room.
             msg (str): Informative message about the object.
             confidence (str): Detected object's confidence
         message (str): Info about objects detected in a dangerous position
-        frame (ndarray): Frame read in a certain moment.
     
     """
     data_dict = {'class': None, 'msg': None, 'confidence': None}
